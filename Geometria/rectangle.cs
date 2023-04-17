@@ -38,8 +38,8 @@ namespace Geometria
 
         public float CalculateAria() {
 
-           return rectangleBase * rectangleHeight;
-
+            float CalculateAriaUser = rectangleHeight * rectangleBase;
+            return CalculateAriaUser;
         }
 
         public float CalculatePerimeter()
@@ -57,6 +57,27 @@ namespace Geometria
           Console.WriteLine("Perimetro: {0} cm", CalculatePerimeter());
           Console.WriteLine("Area: {0} cm2", CalculatePerimeter());
         }
+        
+
+        public void draw()
+        {
+            Console.WriteLine("disegno il rettangolo");
+            for(int i = 0; i < rectangleHeight; i++) { 
+             for(int j = 0; j < rectangleBase; j++) { 
+                
+                
+                
+                
+                
+                }
+            
+            
+            
+            
+            }
+        }
+
+
     }   
 
 }
