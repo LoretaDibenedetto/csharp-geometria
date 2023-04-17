@@ -59,11 +59,41 @@ namespace Geometria
             Console.WriteLine("base: {0} cm", rectangleBase);
             Console.WriteLine("altezza: {0} cm", rectangleHeight);
             Console.WriteLine("Perimetro: {0} cm", CalculatePerimeter());
-            Console.WriteLine("Area: {0} cm2", CalculatePerimeter());
+            Console.WriteLine("Aria: {0} cm2", CalculateAria());
         }
 
 
-       
+        public void draw()
+        {
+            Console.WriteLine("disegno il rettangolo...");
+            for (int i = 0; i < rectangleHeight; i++)
+            {
+                for (int j = 0; j < rectangleBase; j++)
+                {
+                        if (i == 0 || i == rectangleHeight -1 )
+                        {
+                            Console.Write("--");
+                        }
+                    else
+                    {
+                        if (j == 0 || j == rectangleBase -1)
+                        {
+                            Console.Write("| ");
+                        }
+                        else
+                        {
+                            Console.Write("  ");
+                        }
+
+                    }
+
+                }
+
+                Console.WriteLine();
+
+            }
+
+        }
 
 
     }
