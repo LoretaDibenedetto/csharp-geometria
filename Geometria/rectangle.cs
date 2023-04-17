@@ -10,7 +10,7 @@ namespace Geometria
     {
         //attributi
         public float rectangleBase;
-        public float rectangleHeight;   
+        public float rectangleHeight;
 
 
 
@@ -36,22 +36,27 @@ namespace Geometria
 
         //metodi
 
-        public float RectangleAria(float rectangleBase, float rectangleHeight) {
+        public float CalculateAria() {
 
-         float ariaRectangle = rectangleBase * rectangleHeight;
-        
-         return ariaRectangle;
-        
+           return rectangleBase * rectangleHeight;
+
         }
 
-        public float Perimeter(float rectangleBase, float rectangleHeight)
+        public float CalculatePerimeter()
         {
-           float perimeterRectangle = rectangleBase + rectangleHeight * 2 ;
+           
 
-           return perimeterRectangle;
+            return 2 *(rectangleBase + rectangleHeight);
         }
 
-
+        public void stampRectangle()
+        {
+          Console.WriteLine("—— Rettangolo ——");
+          Console.WriteLine("base: {0} cm", rectangleBase);
+          Console.WriteLine("altezza: {0} cm", rectangleHeight);
+          Console.WriteLine("Perimetro: {0} cm", CalculatePerimeter());
+          Console.WriteLine("Area: {0} cm2", CalculatePerimeter());
+        }
     }   
 
 }
