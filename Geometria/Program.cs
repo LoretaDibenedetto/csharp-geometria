@@ -16,7 +16,7 @@ Rectangle rettangolo1 = new Rectangle(baseRectangle, heightRectangle);
 
 Console.WriteLine("-----------------------------------------------------------");
 Console.WriteLine("il Perimetro del rettangolo e': " + rettangolo1.CalculatePerimeter());
-Console.WriteLine("l'aria del rettangolo e': " + rettangolo1.CalculateAria());
+Console.WriteLine("l'area del rettangolo e': " + rettangolo1.CalculateArea());
 Console.WriteLine("-----------------------------------------------------------");
 
 rettangolo1.stampRectangle();
