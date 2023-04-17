@@ -38,7 +38,7 @@ namespace Geometria
         //metodi
         /*Aggiungere due metodi: calcolaArea e calcolaPerimetro che calcolano e restituiscono, rispettivamente, l’area e il perimetro del rettangolo.*/
 
-        public float CalculateAria()
+        public float CalculateArea()
         {
 
             float CalculateAriaUser = rectangleHeight * rectangleBase;
@@ -59,7 +59,7 @@ namespace Geometria
             Console.WriteLine("base: {0} cm", rectangleBase);
             Console.WriteLine("altezza: {0} cm", rectangleHeight);
             Console.WriteLine("Perimetro: {0} cm", CalculatePerimeter());
-            Console.WriteLine("Aria: {0} cm2", CalculateAria());
+            Console.WriteLine("Area: {0} cm2", CalculateArea());
         }
 
 
@@ -74,9 +74,7 @@ namespace Geometria
                         {
                             Console.Write("--");
                         }
-                    else
-                    {
-                        if (j == 0 || j == rectangleBase -1)
+                    else if (j == 0 || j == rectangleBase -1)
                         {
                             Console.Write("| ");
                         }
@@ -85,7 +83,7 @@ namespace Geometria
                             Console.Write("  ");
                         }
 
-                    }
+                    
 
                 }
 
